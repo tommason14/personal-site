@@ -1,0 +1,24 @@
+
+  
+.blog
+  .grid-container
+    for article, url in public.articles._data
+      .post
+        img(src="#{article.pic}", alt="")
+        .meta.hidden
+          a(href="/articles/#{url}") #{article.title}
+          p #{article.date}
+
+
+//- <div class="blog">
+//-   <div class="grid-container">
+//-     {% for post in site.posts limit: 12 %}
+//-       <div class="post">
+//-         <img src="{{ post.pic }}" alt="">
+//-         <div class="meta hidden">
+//-           <p>{{ post.title }}</p>
+//-           <p>{{ post.date | date_to_string}}</p>
+//-           <a href="{{ post.url }}">POST</a>
+//-         </div>
+//-       </div>
+//-     {% endfor %}

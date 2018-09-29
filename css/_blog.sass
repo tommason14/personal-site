@@ -1,0 +1,86 @@
+.blog
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width: 1000px
+  margin: 0 auto
+  // max-width: 78% // LEAVE 1% ON EITHER SIDE 
+
+  .grid-container
+    // display: flex
+    // flex-wrap: wrap
+    // justify-content: space-between
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 1rem
+
+
+  @media (max-width: 900px)
+    .grid-container
+      grid-template-columns: repeat(3, 1fr)
+
+  @media (max-width: 768px)
+    .grid-container
+      grid-template-columns: repeat(2, 1fr)
+
+  @media (max-width: 400px)
+    .grid-container
+      grid-template-columns: 1fr
+  
+
+
+  .meta
+    position: absolute
+    top: 25%
+    left: 25%
+    text-align: center
+    
+
+  .post
+    width: 200px
+    height: 200px
+    flex: 1
+    margin: 2%
+    justify-self: center
+    align-self: center
+    position: relative // for meta
+    transition: all 200ms ease-in-out
+    p
+      text-align: center
+    
+    img
+      display: block
+      // width: 100%
+      // height: auto
+      max-width: 100%
+      max-height: 100%
+    // &:hover
+    //   transform: scale(1.2)
+    //   img
+    //     opacity: 0.3
+
+  .flex-container
+    visibility: hidden
+  /* Prevents :hover from triggering in the gaps between items */
+
+  .flex-container > * 
+    visibility: visible
+  /* Brings the child items back in, even though the parent is `hidden` */
+
+  .flex-container > * 
+    transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms
+  /* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+  .flex-container:hover > * 
+    opacity: 0.4
+    transform: scale(0.9)
+  /* Fade out all items when the parent is hovered */
+
+  .flex-container > *:hover
+    opacity: 1
+    transform: scale(1)
+    transition-delay: 0ms, 0ms
+  /* Fade in the currently hovered item */
+
+
+  
