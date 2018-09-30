@@ -30,7 +30,7 @@ array.forEach(function(item, index){
 
 Note that a function is passed as an argument in the forEach loop anonymously: it is only used for looping through that particular array at that time. You can also define a function outside and pass it into the forEach loop, and continue to use it anywhere.
 
-An important note is that .forEach calls the function implicitly over every item in the array - it is not called by the user. Also .forEach takes 3 arguments:
+An important note is that forEach calls the function implicitly over every item in the array - it is not called by the user. Also, forEach takes 3 arguments:
   1. item
   2. index
   3. array it is called upon (redundant really)

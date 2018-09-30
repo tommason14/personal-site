@@ -1,8 +1,8 @@
 .blog
   .grid-container
     for article, url in public.articles._data
-      .post
+      figure.post
         img(src="#{article.pic}", alt="")
-        .meta.hidden
+        figcaption.meta.hidden
           a(href="/articles/#{url}") #{article.title}
           p #{article.date}

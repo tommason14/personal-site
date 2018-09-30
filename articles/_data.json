@@ -2,12 +2,17 @@
   "PythonOOP":{
     "title": "Object-oriented Python",
     "date": "3rd Mar 2018",
-    "pic": "http://fillmurray.com/200/200"
+    "pic": "http://fillmurray.com/100/100"
   },
   "JSBasics":{
     "title": "JavaScript Concepts",
     "date": "6th Feb 2018",
-    "pic": "http://fillmurray.com/200/200"
+    "pic": "http://fillmurray.com/100/100"
+  },
+  "UsingHarp":{
+    "title": "How I made this site",
+    "date": "29th Sept 2018",
+    "pic": "http://fillmurray.com/100/100" 
   }
 }
   
