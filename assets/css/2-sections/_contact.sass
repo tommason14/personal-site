@@ -1,0 +1,59 @@
+#contact
+  h1
+    @media (max-width: 954px)
+      +font-roboto(35px)
+      margin-left: 17%
+  .form
+    max-width: 40rem
+    margin: 3rem auto
+    margin-bottom: 0
+    padding: 1rem
+
+    input:not(:last-child), textarea
+      border: 2px solid $green
+      display: block
+      &:hover, &:focus
+        outline: none
+
+    .name,
+    .email
+      width: 48%
+      margin-bottom: 1rem
+      padding: 1rem
+
+    .name
+      float: left
+
+    .email
+      float: right
+
+    .message
+      width: 100%
+      padding: 1rem
+
+    *[placeholder]
+      +font-roboto(16px)
+
+    .submit
+      width: auto
+      margin: 2rem
+      margin-left: 0
+      padding: 1rem
+      +font-roboto(16px)
+      text-transform: capitalize
+      color: white
+      background: $green
+      border: none
+      border-radius: 10px
+      cursor: pointer
+      transition: all .2s
+
+      &:hover
+        transform: translateY(-5px)
+        box-shadow: 0 .5rem 1rem rgba(#000,.2)
+
+      &:active,
+      &:focus
+          outline: none
+          transform: translateY(-1px)
+          box-shadow: 0 .25rem 1rem rgba(#000,.2)

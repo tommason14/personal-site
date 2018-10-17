@@ -1,0 +1,18 @@
+=font-standout($fsize: false)
+  font-family: "Unica One", serif
+  @if $fsize
+    font-size: $fsize
+
+=font-roboto($fsize: false, $lh: false)
+  font-family: 'Roboto Mono', sans-serif
+  @if $fsize
+    font-size: $fsize
+  @if $lh
+    line-height: $lh
+
+=jazzy-link($size-on-hover)
+  display: inline
+  box-shadow: 0 -3px 0 0 $green inset
+  transition: all .3s
+  &:hover
+    box-shadow: 0 -1px*$size-on-hover 0 0 $green inset

@@ -1,5 +1,15 @@
-.main
-  h1.name Tom Mason
-  h3.string PhD Student <span class="divider">//</span> Web Designer
-  img.pic(src="http://fillmurray.com/200/200", alt="")
-  a.button(href="#") Contact Me
+main
+  .content.content--fixed
+    include _partials/_fixed-content
+  .content-wrap
+    .content
+      include _partials/_home
+  .content-wrap
+    .content
+      include _partials/_about
+  .content-wrap
+    .content
+      include _partials/_phd
+  .content-wrap
+    .content
+      include _partials/_contact

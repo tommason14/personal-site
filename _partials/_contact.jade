@@ -1,0 +1,8 @@
+section#contact
+  h1.section__title.jazzy-link-section__title Contact Me
+  form.form(action="http://formspree.io/tommason14@gmail.com" method="POST")
+    input(type="hidden" name="_subject" value="New email from website")
+    input.name(type="name" placeholder="Name")
+    input.email(type="email" name="_replyto" placeholder="Email")
+    textarea.message(name="body" placeholder="Message" rows="8" cols="50")
+    input.submit(type="submit" value="Send")
